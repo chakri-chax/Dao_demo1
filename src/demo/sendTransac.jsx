@@ -20,7 +20,7 @@ const MyComponent = () => {
       });
       //Value = '0x' + (1 * 10 ** 18).toString(16)
       console.log('Transaction hash:', transaction);
-      console.log("value :",setVal);
+      
     } catch (error) {
       console.error('Error sending transaction:', error);
     } finally {
