@@ -7,10 +7,14 @@ const Header = () => {
 
   return (
     <>
-    <div>Header</div>
+   <h1 className="text-3xl font-bold underline bg-indigo-500 ...">
+      Wallet Info 
+    </h1>
+    
+    
     <div>
     {connectedAccount ? (
-                <button>
+                <button className='bg-blue-500 '>
                   {truncate(connectedAccount, 4, 4, 11)}
                 </button>
               ) : (
@@ -20,6 +24,7 @@ const Header = () => {
                   Connect Wallet
                 </button>
               )}
+              
     </div>
     </>
 
